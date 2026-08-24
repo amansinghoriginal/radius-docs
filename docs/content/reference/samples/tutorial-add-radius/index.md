@@ -86,6 +86,14 @@ Step 2: Deploy and test the existing Guestbook application using `kubectl`
 
 1. Verify that the application successfully deployed:
 
+   Wait for all three Deployments to become available:
+
+   ```bash
+   kubectl wait --for=condition=available deployment --all -n demo --timeout=300s
+   ```
+
+   Then list the deployed resources:
+
    ```bash
    kubectl get all -n demo
    ```
@@ -222,6 +230,14 @@ You will now add Radius to the Guestbook application's Kubernetes deployment man
    ```
 
 1. Verify that the application successfully deployed:
+
+   Wait for all three Deployments to become available:
+
+   ```bash
+   kubectl wait --for=condition=available deployment --all -n demo --timeout=300s
+   ```
+
+   Then list the Deployments and Services:
 
    ```bash
    kubectl get deployments -n demo

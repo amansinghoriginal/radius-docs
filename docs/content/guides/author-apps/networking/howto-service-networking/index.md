@@ -34,7 +34,7 @@ With the services defined, we can now add the connection between them. Add a con
 
 ## Step 3: Deploy the application
 
-Deploy the application using the `rad deploy` command:
+Deploy the application using the `rad run` command:
 
 ```bash
 rad run app.bicep -a networking-demo
@@ -62,7 +62,7 @@ Starting log stream...
 
 ## Step 4: Test the connection
 
-Visit [http://localhost:3000](http://localhost:3000) in your browser. You should see a connection to the backend container, along with the environment variables that have automatically been set on the frontend container:
+Visit [http://localhost:3000](http://localhost:3000) in your browser. Select **BACKEND** to expand the connection details. You should see the environment variables that have automatically been set on the frontend container:
 
 {{< image src="backend-connection.png" alt="Screenshot of the demo container showing the backend connections" width="600px" >}}
 

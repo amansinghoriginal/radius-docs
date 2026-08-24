@@ -115,10 +115,10 @@ Add the following [`runtimes`]({{< ref "reference/resource-schema/core-schema/co
 
    ```
    POD                     STATUS    CONTAINER_NAMES      CONTAINER_IMAGES
-   demo-547d7dc77f-nmqpk   Running   log-collector,demo   ghcr.io/radius-project/fluent-bit:2.1.8,radius.azurecr.io/tutorial/webapp:latest
+   demo-547d7dc77f-nmqpk   Running   log-collector,demo   ghcr.io/radius-project/fluent-bit:2.1.8,ghcr.io/radius-project/samples/demo:latest
    ```
 
-   Note that you might see old pods with a state of `Terminating` in the output - this is normal and you should see them disappear once the redeployment completes cleaning up the old resources.
+   During the rollout, you might temporarily see the old pod in either `Running` or `Terminating` state. Wait for the rollout to finish and repeat the command until only the new two-container pod remains.
 
    The `log-collector` container was deployed using the PodSpec definition you added to your `app.bicep` file in the `runtimes` property you added, and is now running alongside your original `demo` app container.
 
@@ -127,7 +127,7 @@ Add the following [`runtimes`]({{< ref "reference/resource-schema/core-schema/co
 Run the following command to [delete]({{< ref "guides/deploy-apps/howto-delete" >}}) your app and container:
 
    ```bash
-   rad app delete demo
+   rad app delete demo --yes
    ```
 
 ## Further reading

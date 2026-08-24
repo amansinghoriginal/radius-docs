@@ -135,7 +135,7 @@ Congratulations, you have deployed your first application using Radius!
 Delete the Todo List application:
 
 ```bash
-rad app delete todolist
+rad app delete todolist --yes
 ```
 
 Optionally, uninstall Radius using the `purge` argument to remove Radius and all data:

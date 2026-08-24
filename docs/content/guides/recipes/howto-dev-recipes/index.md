@@ -41,14 +41,14 @@ Local development environments created by the rad init command include a set of 
    You should see a table of available Recipes:
 
    ```
-   NAME      TYPE                                    TEMPLATE KIND  TEMPLATE VERSION  TEMPLATE
-   default   Applications.Datastores/sqlDatabases    bicep                            ghcr.io/radius-project/recipes/local-dev/sqldatabases:latest
-   default   Applications.Messaging/rabbitMQQueues   bicep                            ghcr.io/radius-project/recipes/local-dev/rabbitmqqueues:latest
-   default   Applications.Dapr/pubSubBrokers         bicep                            ghcr.io/radius-project/recipes/local-dev/pubsubbrokers:latest
-   default   Applications.Dapr/secretStores          bicep                            ghcr.io/radius-project/recipes/local-dev/secretstores:latest
-   default   Applications.Dapr/stateStores           bicep                            ghcr.io/radius-project/recipes/local-dev/statestores:latest
-   default   Applications.Datastores/mongoDatabases  bicep                            ghcr.io/radius-project/recipes/local-dev/mongodatabases:latest
-   default   Applications.Datastores/redisCaches     bicep                            ghcr.io/radius-project/recipes/local-dev/rediscaches:latest
+   RECIPE    TYPE                                    TEMPLATE KIND  TEMPLATE VERSION  TEMPLATE
+   default   Applications.Datastores/sqlDatabases    bicep                            ghcr.io/radius-project/recipes/local-dev/sqldatabases:0.60
+   default   Applications.Messaging/rabbitMQQueues   bicep                            ghcr.io/radius-project/recipes/local-dev/rabbitmqqueues:0.60
+   default   Applications.Dapr/pubSubBrokers         bicep                            ghcr.io/radius-project/recipes/local-dev/pubsubbrokers:0.60
+   default   Applications.Dapr/secretStores          bicep                            ghcr.io/radius-project/recipes/local-dev/secretstores:0.60
+   default   Applications.Dapr/stateStores           bicep                            ghcr.io/radius-project/recipes/local-dev/statestores:0.60
+   default   Applications.Datastores/mongoDatabases  bicep                            ghcr.io/radius-project/recipes/local-dev/mongodatabases:0.60
+   default   Applications.Datastores/redisCaches     bicep                            ghcr.io/radius-project/recipes/local-dev/rediscaches:0.60
    ```
 
    > Visit the [Recipes repo](https://github.com/radius-project/recipes) to learn more about the definition of these `local-dev` recipe templates.
@@ -118,3 +118,11 @@ Note that no Recipe name is specified within 'db', so it will be using the defau
    frontend-6d447f5994-pnmzv              1/1     Running   0          13m
    redis-ymbjcqyjzwkpg-66fdbf8bb6-brb6q   2/2     Running   0          13m
    ```
+
+## Cleanup
+
+Press `CTRL`+`C` to stop the log stream and port forwarding, then delete the application and its Recipe-provisioned resources:
+
+```bash
+rad app delete local-dev-app --yes
+```

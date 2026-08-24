@@ -37,7 +37,7 @@ The Guestbook application consists of a web front end along with primary and sec
 1. Clone the Radius samples repo to your local machine:
 
    ```bash
-   git clone https://github.com/radius-project/samples.git
+   git clone https://github.com/amansinghoriginal/radius-samples.git
    ```
 
 1. Navigate to the `samples/samples/kubernetes/guestbook` directory:
@@ -90,7 +90,7 @@ Step 2: Deploy and test the existing Guestbook application using `kubectl`
    kubectl get all -n demo
    ```
 
-   You should see output similar to below, with 5 pods and 3 services successfully deployed as expected:
+   You should see output similar to below, with 6 pods and 3 services successfully deployed as expected:
 
    ```
    NAME                                 READY   STATUS    RESTARTS   AGE

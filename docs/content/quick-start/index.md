@@ -85,7 +85,7 @@ resource demo 'Applications.Core/containers@2023-10-01-preview' = {
 Use the `rad run` command to deploy the application and setup port forwarding.
 
 ```bash
-rad run app.bicep
+rad run app.bicep --application todolist
 ```
 
 This command:
@@ -109,7 +109,7 @@ Browse to the Radius Dashboard by visiting [http://localhost:7007](http://localh
 The `rad app graph` command shows you all the resources that the application is composed of. 
 
 ```bash
-rad app graph
+rad app graph --application todolist
 ```
 
 You should see the following output, which lists the underlying Kubernetes resources running the application.

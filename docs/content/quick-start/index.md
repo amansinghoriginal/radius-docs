@@ -102,7 +102,7 @@ Browse to the Todo List application by visiting [http://localhost:3000](http://l
 
 ## Browse the Radius Dashboard
 
-Browse to the Radius Dashboard by visiting [http://localhost:7007](http://localhost:7007). Find the Todo List Application under the Applications tab and examine its resources.
+Browse to the Radius Dashboard by visiting [http://localhost:7007](http://localhost:7007). If the Guest entry screen appears, select **ENTER** to continue as a Guest User. Find the Todo List Application under the Applications tab and examine its resources.
 
 ## View the Application Graph
 

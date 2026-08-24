@@ -202,7 +202,7 @@ You will now add Radius to the Guestbook application's Kubernetes deployment man
       spec:
          containers:
          - name: php-redis
-         image: ghcr.io/radius-project/samples/gb-frontend:v4
+         image: gcr.io/google-samples/gb-frontend:v5
          resources:
             requests:
                cpu: 100m

@@ -40,10 +40,10 @@ The Guestbook application consists of a web front end along with primary and sec
    git clone https://github.com/radius-project/samples.git
    ```
 
-1. Navigate to the `samples/kubernetes/guestbook` directory:
+1. Navigate to the `samples/samples/kubernetes/guestbook` directory:
 
    ```bash
-   cd samples/kubernetes/guestbook
+   cd samples/samples/kubernetes/guestbook
    ```
 
    > The `kubernetes/guestbook` directory contains the Kubernetes YAML manifest files for their Guestbook sample application, copied directly from the [Kubernetes examples repo](https://github.com/kubernetes/examples/tree/master/web/guestbook).

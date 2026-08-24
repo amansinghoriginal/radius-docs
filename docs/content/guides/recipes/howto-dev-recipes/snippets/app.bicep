@@ -12,6 +12,11 @@ resource frontend 'Applications.Core/containers@2023-10-01-preview' = {
     application: application
     container: {
       image: 'ghcr.io/radius-project/samples/demo:latest'
+      ports: {
+        web: {
+          containerPort: 3000
+        }
+      }
     }
     connections: {
       // Define a connection to the redis container

@@ -98,7 +98,7 @@ This command:
 
 ## Browse the Todo List Application UI
 
-Browse to the Todo List application by visiting [http://localhost:3000](http://localhost:3000). Notice that the Radius Connections section says "No connections defined." In the five part tutorial, you will add a database and a connection between the container and the database.
+Browse to the Todo List application by visiting [http://localhost:3000](http://localhost:3000). Notice that the Radius Connections section says **No connections defined**. In the five part tutorial, you will add a database and a connection between the container and the database.
 
 ## Browse the Radius Dashboard
 

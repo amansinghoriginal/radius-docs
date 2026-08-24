@@ -147,13 +147,13 @@ Step 2: Deploy and test the existing Guestbook application using `kubectl`
    rad app graph -a demo -g default-demo
    ```
 
-   Since you have not yet added Radius to the application, the `rad` CLI will not recognize your `demo` application and you should see a message in the output similar to:
+   Since you have not yet added Radius to the application, the `rad` CLI will not recognize your `demo` application. The command exits with an error like:
 
    ```
-   Displaying application: demo
-
-   (empty)
+   Application "demo" does not exist or has been deleted.
    ```
+
+   This error is expected and confirms that the application has not been added to Radius yet.
 
 ## Step 3: Add Radius to the Guestbook application
 

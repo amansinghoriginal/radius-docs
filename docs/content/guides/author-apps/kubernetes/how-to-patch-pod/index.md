@@ -118,7 +118,7 @@ Add the following [`runtimes`]({{< ref "reference/resource-schema/core-schema/co
    demo-547d7dc77f-nmqpk   Running   log-collector,demo   ghcr.io/radius-project/fluent-bit:2.1.8,ghcr.io/radius-project/samples/demo:latest
    ```
 
-   During the rollout, you might temporarily see the old pod in either `Running` or `Terminating` state. Wait for the rollout to finish and repeat the command until only the new two-container pod remains.
+   During the rollout, you might temporarily see the old pod in `Running`, `Terminating`, or `Failed` state. Wait for the rollout to finish and repeat the command until only the new two-container pod remains.
 
    The `log-collector` container was deployed using the PodSpec definition you added to your `app.bicep` file in the `runtimes` property you added, and is now running alongside your original `demo` app container.
 

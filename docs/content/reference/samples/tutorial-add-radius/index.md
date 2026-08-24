@@ -70,7 +70,7 @@ The Guestbook application consists of a web front end along with primary and sec
    Initialization complete! Have a RAD time 😎
    ```
 
-Step 2: Deploy and test the existing Guestbook application using `kubectl`
+## Step 2: Deploy and test the existing Guestbook application using `kubectl`
 
 1. Create a Kubernetes namespace called `demo`:
 
@@ -287,17 +287,17 @@ Displaying application: demo
 Name: frontend (Applications.Core/containers)
 Connections: (none)
 Resources:
-  frontend (kubernetes: apps/Deployment)
+  frontend (apps/Deployment)
 
 Name: redis-master (Applications.Core/containers)
 Connections: (none)
 Resources:
-  redis-master (kubernetes: apps/Deployment)
+  redis-master (apps/Deployment)
 
 Name: redis-replica (Applications.Core/containers)
 Connections: (none)
 Resources:
-  redis-replica (kubernetes: apps/Deployment)
+  redis-replica (apps/Deployment)
 ```
 
 This output shows that Radius has detected the three container resources in the Kubernetes application that you have just deployed. Note that since you have not used Radius to define any connections between the resources, the `Connections` field is empty. However, your application is now ready to be further modified using the Radius features that are now available to you, , such as [Connections]({{< ref "guides/author-apps/containers/overview#connections" >}}), [Recipes]({{< ref "concepts/recipes" >}}), and more.

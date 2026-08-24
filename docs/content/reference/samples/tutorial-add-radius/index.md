@@ -37,7 +37,7 @@ The Guestbook application consists of a web front end along with primary and sec
 1. Clone the Radius samples repo to your local machine:
 
    ```bash
-   git clone https://github.com/amansinghoriginal/radius-samples.git
+   git clone https://github.com/amansinghoriginal/radius-samples.git samples
    ```
 
 1. Navigate to the `samples/samples/kubernetes/guestbook` directory:
